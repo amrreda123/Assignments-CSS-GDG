@@ -1,0 +1,45 @@
+.parent .child .title {
+    color: red;
+}
+
+.parent .title {
+    color: blue;
+}
+
+.parent p {
+    color: green;
+}
+
+div.title {
+    color: yellow;
+}
+
+.one {
+    background-color: brown;
+    width: fit-content;
+    padding: 10px;
+    margin: 10px;
+}
+
+.two {
+    background-color: brown;
+    width: fit-content;
+    padding: 10px;
+    margin: 10px;
+}
+
+.three {
+    background-color: brown;
+    width: fit-content;
+    padding: 10px;
+    margin: 10px;
+}
+
+.four {
+    background-color: brown;
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+    overflow: hidden;
+}

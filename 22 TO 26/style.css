@@ -1,0 +1,40 @@
+div {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    border: 5px solid #ccc;
+}
+
+div p {
+    background-color: #4d4545;
+    border: 5px solid;
+    border-color: inherit;
+    padding: inherit;
+    text-align: center;
+}
+html{
+    font-size: 20px;
+}
+.p-1 {
+    text-align: center;
+    font-family: "Open sans", sans-serif;
+    /* font-style: italic; */
+    font-weight: 300;
+    /* 1rem => 16px */
+    font-size: 3.12rem;
+}
+
+.p-2 {
+    font-family: "Cairo", sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.p-3 {
+    font-family: "Jomhuria", cursive;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.9rem;
+}

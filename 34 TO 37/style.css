@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.div-1 {
+    background-color: #dddd;
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    margin: auto;
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+
+.div-1:empty {
+    background-color: red;
+}
+
+/* ------------------------ */
+.div-2 {
+    background-color: #ddd;
+    width: 350px;
+    height: 35px;
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+    position: relative;
+    counter-increment: emmers;
+}
+
+.div-2::first-letter {
+    visibility: hidden;
+}
+
+.div-2::after {
+    content: counter(emmers);
+    color: white;
+    background-color: red;
+    padding: 10px 8px;
+    position: absolute;
+    left: -10px;
+    top: 8px;
+}
+
+/* ----------------------- */
+p {
+    background-color: #dddd;
+    text-align: center;
+    width: 400px;
+    margin: 20px auto 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-left: 5px #e91e63 solid;
+}
+
+p::after {
+    content: attr(data-person);
+    background-color: #ddd;
+    padding: 15px;
+    position: absolute;
+    left: 380px;
+    margin: -15px auto;
+    width: 50px;
+}
+
+p::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    color: black;
+    left: 453px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #e91e63 transparent transparent;
+}
+/* ----------------------- */
+.div-3{
+    background-color: #ddd;
+    color: black;
+    margin: 10px auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 350px;
+    position: relative;
+    counter-increment: number;
+}
+.div-3::after{
+    content: "";
+    position: absolute;
+    background-color: #f44336;
+    width: 0px;
+    height: 58.4px;
+    right: 0px;
+    bottom: 0px;
+}
+.div-3::before {
+    content: counter(number);
+    position: absolute;
+    left: -44px;
+    background-color: #f44336;
+    padding: 20px 20px;
+    bottom: 0;
+    left: -39;
+    color: white;
+    text-align: center;
+}
+.div-3:hover::after{
+    width: 5px;
+}

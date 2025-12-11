@@ -1,0 +1,62 @@
+.UP {
+    width: 800px;
+    background-color: black;
+    margin: 15px auto;
+    text-align: center;
+    padding: 15px;
+}
+
+.full {
+    background-color: gray;
+    margin: 15px;
+    padding: 15px;
+}
+
+.one div {
+    background-color: antiquewhite;
+    padding: 15px 0 15px 0;
+    float: left;
+    width: calc((100% - 60px) / 3);
+    margin-left: 15px;
+}
+
+.two div {
+    background-color: aqua;
+    padding: 15px 0;
+    margin-left: 15px;
+    margin-top: 15px;
+    float: left;
+    width: calc((100% - 45px) / 2);
+}
+
+.three div {
+    background-color: rgb(163, 185, 185);
+    padding: 15px 0 15px 0;
+    margin-left: 15px;
+    margin-top: 15px;
+    float: left;
+    width: calc((100% - 75px) / 4);
+}
+
+.div {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    color: black;
+}
+.div.normal{
+    background-color: rgba(122, 114, 114, 0.857);
+}
+.div.one {
+    background-color: rgba(122, 114, 114, 0.1);
+}
+
+.div.two {
+    opacity: 0.1;
+    background-color: rgba(122, 114, 114);
+}
+.clear{
+    clear: both;
+}

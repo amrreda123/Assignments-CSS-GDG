@@ -1,0 +1,20 @@
+.element {
+    background-color: #ddd;
+    padding: 5px;
+    width: fit-content;
+}
+
+.element-1 {
+    
+    border: 5px solid rgb(240, 40, 106);
+    border-width: 0 0 0 5px;
+}
+
+.element-2 {
+    visibility: hidden;
+}
+
+.element-3 {
+    border: 5px solid rgb(18, 153, 90);
+    border-width: 0 0 0 5px;
+}

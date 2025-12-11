@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.div-1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 7px solid black;
+    margin: 65px auto;
+    counter-increment: num;
+    position: relative;
+    box-shadow: -6px -2px 2px 2px red, 4px 3px 2px 2px blue;
+    background-color: #eee;
+
+}
+
+.div-1::before {
+    content: counter(num);
+    position: absolute;
+    top: -18px;
+    left: 35px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    width: 25%;
+    height: 25%;
+    border: 5px solid black;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.div-1::after {
+    content: "Element";
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 41px;
+    left: 22px;
+}
+
+/* ---------------------------------------------------------------------------- */
+.div-2 {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-top: 60px;
+    border: 5px solid black inset;
+    background-color: #f7f0f0dd;
+    border-radius: 10px 55px;
+    box-shadow: 0px 0px 20px 0px black inset;
+}
+
+/* ---------------------------------------------------------------------------- */
+.all {
+    width: 550px;
+    height: 420px;
+    background-color: white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+    margin: 5px auto;
+    border: 2px solid black;
+}
+
+.pernt-1 {
+    width: 200px;
+    height: 400px;
+    background-color: #eee;
+    padding: 10px;
+}
+
+.basic {
+    background-color: blue;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    margin: 5px auto;
+    border-radius: 5px;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    position: relative;
+    opacity: .6;
+}
+
+
+.free {
+    background-color: #8d6969;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-top: 100px;
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    opacity: .6;
+}
+
+.pro {
+    background-color: blue;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    margin: 5px auto;
+    border-radius: 5px;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    position: relative;
+    opacity: .6;
+}
+
+.pernt-2 {
+    width: 200px;
+    height: 400px;
+    background-color: #eee;
+    padding: 10px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.num {
+    background-color: #8d6969;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-top: 100px;
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.pro::before {
+    content: attr(data-person);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 171px;
+    right: 243px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: blue;
+    color: black;
+    line-height: 40px;
+    color: white;
+    opacity: 1;
+}
+
+.basic::after {
+    content: "";
+    width: 3px;
+    height: 420px;
+    position: absolute;
+    top: -14px;
+    left: 265px;
+    background-color: blue;
+}
